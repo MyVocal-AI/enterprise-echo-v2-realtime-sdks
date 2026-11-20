@@ -1,0 +1,24 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Java build output
+.gradle/
+target/
+build/
+*.class
+
+# Python build output and environments
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+
+# Local test and build output
+.verify/
+.coverage
+.pytest_cache/
+*.test
+*.log

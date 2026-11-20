@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "myvocal-echo-v2-realtime"
+version = "0.1.0"
+description = "Async Python SDK for MyVocal Enterprise echo_v2_realtime ASR"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["websockets>=14,<18"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Framework :: AsyncIO",
+  "Typing :: Typed",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/myvocal_echo_v2_realtime"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/examples", "/tests", "/README.md", "/pyproject.toml"]
