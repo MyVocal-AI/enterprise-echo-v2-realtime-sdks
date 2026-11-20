@@ -2,7 +2,18 @@
 
 Stream speech to `echo_v2_realtime` from a Go service using an Enterprise ASR key. The SDK connects to `wss://openapi.myvocal.ai/asr/realtime` and accepts raw 16 kHz, mono, signed 16-bit little-endian PCM. The module declares Go 1.21 or later.
 
-## Install the local candidate
+## Install from GitHub
+
+Run this from your Go module. Put your Enterprise ASR key in the server process environment variable `MYVOCAL_API_KEY`.
+
+```sh
+go get github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/go@v0.1.0-rc.1
+go run github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/go/examples/segment -pcm english.pcm
+```
+
+Use your PCM file path or download the [shared synthetic audio](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/tree/v0.1.0-rc.1/samples).
+
+## Install from a locally built module proxy
 
 Set `MYVOCAL_API_KEY` in the process environment using your secret manager. Keep the key on your server. The commands below use the candidate `v0.1.0-rc.1`. They work from a new Go module or an existing application outside the SDK checkout.
 

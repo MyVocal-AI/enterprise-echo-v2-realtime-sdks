@@ -2,7 +2,17 @@
 
 Use this asyncio SDK to stream audio from your server to MyVocal Enterprise ASR with `echo_v2_realtime`. Read live drafts and finalized text during a call, with optional word timings and speaker labels. For long prerecorded files, use the Enterprise Batch API with `echo_v2`.
 
-## Install the candidate
+## Install the GitHub release
+
+In a Python 3.11+ environment, run:
+
+```sh
+python -m pip install "https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/releases/download/v0.1.0-rc.1/myvocal_echo_v2_realtime-0.1.0-py3-none-any.whl"
+```
+
+The [release source](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/tree/v0.1.0-rc.1) contains the examples and sample audio. Run the commands below from its `python` directory. For a local wheel, follow the installation steps below.
+
+## Install from a local wheel
 
 Python 3.11 or later is required. From this Python package directory, install the local wheel:
 

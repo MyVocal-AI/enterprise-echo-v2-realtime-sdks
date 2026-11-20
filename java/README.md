@@ -4,7 +4,11 @@ Transcribe a short recording or an ongoing audio stream with the MyVocal enterpr
 
 Requires Java **11 or later**. The candidate was built and run on Eclipse Temurin 11.0.29 with Maven 3.9.12. Use **16 kHz, mono, signed 16-bit little-endian PCM** with no file header.
 
-## Install the candidate
+## Install the GitHub release
+
+[Download the Java distribution](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/releases/download/v0.1.0-rc.1/myvocal-enterprise-java-echo-v2-realtime-asr-0.1.0-rc.1.zip) and extract it. Open the extracted `java` directory to run the installation and examples below. The adjacent `samples` directory contains both recordings.
+
+## Install the JAR and POM
 
 Run the commands from the `java` directory. The candidate JAR and its POM are distributed together. Maven or Gradle resolves Gson from Maven Central using the supplied POM.
 

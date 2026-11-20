@@ -2,7 +2,17 @@
 
 Use these server-side SDKs to stream audio to the MyVocal Enterprise ASR model `echo_v2_realtime` and receive live drafts, finalized text, and optional word timings and speaker labels. The packages are specific to this realtime model. For batch transcription of prerecorded files, use the Batch API with `echo_v2`.
 
-## Install by language
+## Install the GitHub release
+
+| Language | Install | Examples |
+|---|---|---|
+| Java 11+ | [Download the Java SDK ZIP](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/releases/download/v0.1.0-rc.1/myvocal-enterprise-java-echo-v2-realtime-asr-0.1.0-rc.1.zip), extract it and follow the included Maven instructions. | [Java quickstart](java/README.md) |
+| Python 3.11+ | Install the [wheel](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/releases/download/v0.1.0-rc.1/myvocal_echo_v2_realtime-0.1.0-py3-none-any.whl) with pip. | [Python quickstart](python/README.md) |
+| Go 1.21+ | `go get github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/go@v0.1.0-rc.1` | [Go quickstart](go/README.md) |
+
+[Release files and SHA-256 checksums](https://github.com/MyVocal-AI/enterprise-echo-v2-realtime-sdks/releases/tag/v0.1.0-rc.1) · [Enterprise ASR documentation](https://api-docs.myvocal.ai/64211774f0)
+
+## Language guides
 
 Use the README for your language for runtime requirements, package installation, and runnable examples.
 
